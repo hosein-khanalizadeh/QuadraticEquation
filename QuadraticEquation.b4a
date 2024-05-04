@@ -1,0 +1,50 @@
+﻿Build1=Default,quadratic.equation.hoseinkhanali
+File1=Frame.bal
+File2=Home_Frame.bal
+FileGroup1=Default Group
+FileGroup2=Default Group
+Group=Default Group
+IconFile=
+Library1=core
+ManifestCode='This code will be applied to the manifest file during compilation.~\n~'You do not need to modify it in most cases.~\n~'See this link for for more information: https://www.b4x.com/forum/showthread.php?p=78136~\n~AddManifestText(~\n~<uses-sdk android:minSdkVersion="5" android:targetSdkVersion="29"/>~\n~<supports-screens android:largeScreens="true" ~\n~    android:normalScreens="true" ~\n~    android:smallScreens="true" ~\n~    android:anyDensity="true"/>)~\n~SetApplicationAttribute(android:icon, "@drawable/icon")~\n~SetApplicationAttribute(android:label, "$LABEL$")~\n~'End of default text.~\n~
+Module1=Home
+Module2=Starter
+NumberOfFiles=2
+NumberOfLibraries=1
+NumberOfModules=2
+Version=7.8
+@EndOfDesignText@
+#Region  Project Attributes 
+    #ApplicationLabel: معادله درجه 2
+    #VersionCode: 1
+    #VersionName: 1.0
+    #SupportedOrientations: portrait
+    #CanInstallToExternalStorage: False
+#End Region
+
+#Region  Activity Attributes 
+    #FullScreen: True
+    #IncludeTitle: False
+#End Region
+
+Sub Process_Globals
+	
+End Sub
+
+Sub Globals
+	Private info As Label
+End Sub
+
+Sub Activity_Create(FirstTime As Boolean)
+	Activity.LoadLayout("Frame")
+	Sleep(3000)
+	StartActivity(Home)
+End Sub
+
+Sub Activity_Resume
+	
+End Sub
+
+Sub Activity_Pause (UserClosed As Boolean)
+	
+End Sub
